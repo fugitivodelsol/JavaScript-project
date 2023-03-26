@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    padding: 20px;
+    background-color:wheat;
+
+}
+.titutlo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    color: dimgrey;
+    font-size: 7em;
+}
+h2{
+    text-align: center;
+    color: dimgrey;
+    font-size: 5em;
+}
+body input{
+    border-radius: 5%;
+    border-color: rgb(25, 25, 73);
+    background-color:  rgb(201, 197, 210);
+    border: solid 1px;
+}
+.btn{
+    background-color: rgb(138, 97, 110);
+    color: rgb(38, 29, 63);
+    width: 100%;  
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(86, 106, 20);
+}
+
+.form-select{
+    background-color:  rgb(201, 197, 210); 
+   
+}
