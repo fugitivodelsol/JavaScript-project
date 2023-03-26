@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectoBar</title>
+  </head>
+  <body>
+    <div id="divBienvenida">
+      <h1>Bienvenido</h1>
+      <br />
+      <input
+        type="text"
+        id="inputUserName"
+        placeholder="Nombre de usuario..."
+      />
+      <br /><br />
+      <input type="text" id="inputPassword" placeholder="Contraseña..." />
+      <br /><br />
+      <input
+        type="button"
+        value="Iniciar sesion como cliente"
+        id="btnIniciarSesion"
+      />
+      <input
+        type="button"
+        value="Iniciar sesion como tienda"
+        id="btnLogInTiendas"
+      />
+      <br /><br />
+      <input type="button" value="Registrarse" id="btnCrearPerfil" />
+      <br /><br />
+      <p id="respuestaInicio"></p>
+    </div>
+
+    <div id="divMenuUsuario">
+      <h2>MENU USUARIO</h2>
+      <br /><br />
+      <label for="listaDeLocales">Eliga local</label>
+      <div id="listaDeLocales">
+        <select name="locales" id="selectLocales">
+          <option value="Restauran La Fio">Restauran La Fio</option>
+          <option value="Restauran Varelita">Restauran Varelita</option>
+          <option value="Museo del Pino">Museo del Pino</option>
+          <option value="Restauran Rincon">Restauran Rincon</option>
+          <option value="Teatro lo de Toto y Ado">
+            Teatro lo de Toto y Ado
+          </option>
+          <option value="Mariola Teatro">Mariola Teatro</option>
+          <option value="Museo Alvez">Museo Alvez</option>
+        </select>
+      </div>
+      <br />
+      <label for="inputCantidadDePersonas">Cantidad de personas</label><br />
+      <input type="number" id="inputCantidadDePersonas" /><br /><br />
+      <input type="button" id="btnReservaUsu1" value="Reservar" />
+      <br /><br /><br />
+      <p id="respuestaNegativaDeReserva"></p>
+      <br />
+
+      <input
+        type="button"
+        value="Reservas pendientes"
+        id="btListaReservasPendientes"
+      />
+      <br />
+      <div id="idListadoDeReservasPendientes">
+        <table>
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Cantidad de cupos</th>
+              <th>Cancelar Reserva</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTablaReservasPendientes"></tbody>
+        </table>
+      </div>
+      <br />
+      <div>
+        <input
+          type="button"
+          value="Calificar reservas finalizadas"
+          id="btnCalificarReservasFinalizadasUsuario"
+        />
+      </div>
+      <br />
+      <div id="idDivTablaReservasFinalizadas">
+        <table>
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Calificacion</th>
+              <th>Boton</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTablaGestionUsuarios"></tbody>
+        </table>
+      </div>
+      <input
+        type="button"
+        value="Ver datos estadisticos"
+        id="btnVerDatosEstadisticosUsuario"
+      /><br />
+
+      <div id="idDatosEstadisticosUsuario">
+        <table>
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Reservas finalizadas</th>
+              <th>Total de reservas del local</th>
+              <th>Porcentaje de reservas tuyas en este local</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTablaDatosEstadisticosUsuario"></tbody>
+        </table>
+        <p id="respuestaNoHay"></p>
+        <br />
+      </div>
+      <br />
+      <input type="button" id="btnVerLocalPreferido" value="ver local" />
+      <p id="parrafoLocalPreferido"></p>
+      <br /><br />
+
+      <input
+        type="button"
+        value="Cambiar contraseña"
+        id="btncambiarContraseñaUsuario"
+      /><br /><br /><br />
+
+      <input type="button" value="Cerrar sesion" id="btnCerrarSesionUsuario" />
+      <br /><br />
+    </div>
+
+    <div id="divMenuLocales">
+      <h2>MENU LOCALES</h2>
+      <br />
+
+      <label for="inputBuscarReservas">Buscar reservas por nombre</label>
+      <input type="text" id="inputBuscarReservas" />
+      <input type="button" value="Buscar" id="btnBuscarReservasPorNobre" />
+      <div id="idListadoDeReservasPendientesLocales">
+        <table>
+          <thead>
+            <tr>
+              <th>Cliente</th>
+
+              <th>Finalizar</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTablaReservasPendientesLocales"></tbody>
+        </table>
+      </div>
+      <br />
+      <p id="respuestasss"></p>
+      <br /><br />
+
+      <label for="btnReservasPendioetesLocal">Reservas pendientes</label>
+
+      <input
+        type="button"
+        value="Reservas pendientes"
+        id="btListaReservasPendientesLocal"
+      />
+      <br />
+      <div id="idListadoDeReservasPendientesLocal">
+        <div>
+          <ul id="menuLocal">
+            <li>
+              <a>Gestion de Reservas</a>
+            </li>
+          </ul>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre de Usuario</th>
+                <th>Cantidad de Personas</th>
+                <th>Estado de reserva</th>
+                <th>Modificar Reservas</th>
+              </tr>
+            </thead>
+            <tbody id="bodyTabla"></tbody>
+          </table>
+        </div>
+        <br /><br />
+
+        <input
+          type="button"
+          value=" Porcentaje de ocupacion"
+          id="btnPorcentajeOcupacionLocal"
+        /><br />
+        <div id="numTotalDeReservasPendientes"></div>
+        <br />
+
+        <input
+          type="button"
+          value="Reservas Pendientes"
+          id="btnReservasPendientesTotal"
+        /><br />
+        <div id="mensajeMostrarReservasPendientes"></div>
+        <br />
+
+        <input
+          type="button"
+          value="Reservas finalizadas"
+          id="btnReservasFinalizadas"
+        /><br />
+        <div id="mensajeMostrarReservasFinalizadas"></div>
+
+        <br /><br />
+        <div id="divEditarCupo">
+          Editar cupo máximo <br /><br />
+          <input type="number" id="inputEditarCupoMax" />
+          <input type="button" value="Ingresar" id="btnEditarCupoMax" /><br />
+          <p id="parrafoEditarCupoMax"></p>
+        </div>
+        <br />
+        <input
+          type="button"
+          value="Cerrar Sesion"
+          id="btnCerrarSesionLocales"
+        />
+        <br />
+      </div>
+    </div>
+
+    <div id="divReserva">
+      <div id="resrevaNombreDeLocal"></div>
+      <br /><br />
+      <div id="divCupoDisponible"></div>
+      <br />
+
+      <input type="button" value="volver" id="btnVovlerDsdRererva" />
+    </div>
+
+    <div id="divCambiarContaseña">
+      <h2>Cambiar contaseña</h2>
+      <br />
+      <input
+        type="text"
+        id="inputCrearContraseña"
+        placeholder="Contraseña ..."
+      />
+      <br /><br />
+      <input type="button" value="Ingresar" id="btnCambiarContraseña" />
+      <br /><br />
+      <p id="pRespuestaContraseña"></p>
+
+      <input type="button" value="Volver" id="btnCrearContraseñaVolver" />
+    </div>
+    <div id="divContrseñaCreadaConExito">
+      Su contraseña se ha creado con exito
+      <br /><br />
+      <input
+        type="button"
+        id="btnIniciarSesionContraseñaCreada"
+        value="Iniciar sesision"
+      />
+    </div>
+
+    <div id="divRegistrarse">
+      <h1>Registrarse</h1>
+      <label for="nombreregistro">Ingrese su nombre:</label>
+      <input id="nombreregistro" type="text" />
+      <br /><br />
+      <label for="contraseñaregistro">Ingrese contrasena:</label>
+      <input id="contraseñaregistro" type="text" />
+      <br /><br />
+      <input type="button" value="Registrarse" id="btnRegistrarse" />
+      <div id="resultadoRegistro"></div>
+      <br />
+      <br />
+      <input type="button" id="btnVolverdsdRegistro" value="Volver" />
+    </div>
+
+    <div id="divPerfilCreadoConExito">
+      <h2>Su perfil se ha creado con exito</h2>
+      <br /><br />
+      <input
+        type="button"
+        id="btnIniciarSesionPerilCreado"
+        value="Iniciar sesision"
+      />
+    </div>
+
+    <script src="js\clases.js"></script>
+    <script src="js\proyecto.js"></script>
+  </body>
+</html>
