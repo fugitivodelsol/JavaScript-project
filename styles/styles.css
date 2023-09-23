@@ -20,6 +20,11 @@ h1{
     color: #DFA878;
     font-size: 7em;
 }
+h2{
+    text-align: center;
+    color: #DFA878;
+    font-size: 5em;
+}
 
 body input{
     border-radius: 5px;
