@@ -17,29 +17,26 @@ body{
 h1{
     width: 100%;
     text-align: center;
-    color: dimgrey;
+    color: #DFA878;
     font-size: 7em;
 }
-h2{
-    text-align: center;
-    color: dimgrey;
-    font-size: 5em;
-}
+
 body input{
-    border-radius: 5%;
-    border-color: rgb(25, 25, 73);
-    background-color:  rgb(201, 197, 210);
-    border: solid 1px;
+    border-radius: 5px;
+    border-color: #6C3428;
+    background-color: #CEE6F3;
+    border:  1px;
+    padding: 5px;
 }
 .btn{
     background-color: rgb(138, 97, 110);
-    color: rgb(38, 29, 63);
+    color:#DFA878;
     width: 100%;  
 }
 
 .btn:hover{
-    color: white;
-    background-color: rgb(63, 88, 18);
+    color: #6C3428;
+    background-color:#CEE6F3;
 }
 
 .form-select{
